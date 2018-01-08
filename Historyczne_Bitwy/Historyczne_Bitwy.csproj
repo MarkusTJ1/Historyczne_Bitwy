@@ -53,9 +53,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\GameCard.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="View\GameCard.cs" />
     <Compile Include="View\LvlChange.cs" />
     <Compile Include="View\Walka.cs" />
     <EmbeddedResource Include="Main.resx">

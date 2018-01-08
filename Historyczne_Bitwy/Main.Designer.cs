@@ -78,15 +78,15 @@ namespace Historyczne_Bitwy
             ((System.ComponentModel.ISupportInitialize)(this.Informacje)).BeginInit();
             this.MiniMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Nazwa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kartag)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kartap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kartag.Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta7.Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta6.Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta5.Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta4.Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta3.Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta2.Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta1.Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kartap.Picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -106,15 +106,15 @@ namespace Historyczne_Bitwy
             this.Gra.Controls.Add(this.NextLvl);
             this.Gra.Controls.Add(this.Informacje);
             this.Gra.Controls.Add(this.MiniMenu);
-            this.Gra.Controls.Add(this.kartag);
-            this.Gra.Controls.Add(this.karta7);
-            this.Gra.Controls.Add(this.karta6);
-            this.Gra.Controls.Add(this.karta5);
-            this.Gra.Controls.Add(this.karta4);
-            this.Gra.Controls.Add(this.karta3);
-            this.Gra.Controls.Add(this.karta2);
-            this.Gra.Controls.Add(this.karta1);
-            this.Gra.Controls.Add(this.kartap);
+            this.Gra.Controls.Add(this.kartag.Picture);
+            this.Gra.Controls.Add(this.karta7.Picture);
+            this.Gra.Controls.Add(this.karta6.Picture);
+            this.Gra.Controls.Add(this.karta5.Picture);
+            this.Gra.Controls.Add(this.karta4.Picture);
+            this.Gra.Controls.Add(this.karta3.Picture);
+            this.Gra.Controls.Add(this.karta2.Picture);
+            this.Gra.Controls.Add(this.karta1.Picture);
+            this.Gra.Controls.Add(this.kartap.Picture);
             this.Gra.Controls.Add(this.pictureBox7);
             this.Gra.Controls.Add(this.pictureBox6);
             this.Gra.Controls.Add(this.pictureBox5);
@@ -213,91 +213,91 @@ namespace Historyczne_Bitwy
             // 
             // kartag
             // 
-            this.kartag.Image = global::Historyczne_Bitwy.Properties.Resources.pole;
-            this.kartag.Location = new System.Drawing.Point(322, 428);
-            this.kartag.Name = "kartag";
-            this.kartag.Size = new System.Drawing.Size(100, 140);
-            this.kartag.TabIndex = 15;
-            this.kartag.TabStop = false;
+            this.kartag.Picture.Image = global::Historyczne_Bitwy.Properties.Resources.pole;
+            this.kartag.Picture.Location = new System.Drawing.Point(322, 428);
+            this.kartag.Picture.Name = "kartag";
+            this.kartag.Picture.Size = new System.Drawing.Size(100, 140);
+            this.kartag.Picture.TabIndex = 15;
+            this.kartag.Picture.TabStop = false;
             // 
             // karta7
             // 
-            this.karta7.Image = global::Historyczne_Bitwy.Properties.Resources.wojak;
-            this.karta7.Location = new System.Drawing.Point(640, 588);
-            this.karta7.Name = "karta7";
-            this.karta7.Size = new System.Drawing.Size(100, 140);
-            this.karta7.TabIndex = 14;
-            this.karta7.TabStop = false;
-            this.karta7.Click += new System.EventHandler(this.karta_Click);
+            this.karta7.Picture.Image = global::Historyczne_Bitwy.Properties.Resources.wojak;
+            this.karta7.Picture.Location = new System.Drawing.Point(640, 588);
+            this.karta7.Picture.Name = "karta7";
+            this.karta7.Picture.Size = new System.Drawing.Size(100, 140);
+            this.karta7.Picture.TabIndex = 14;
+            this.karta7.Picture.TabStop = false;
+            this.karta7.Picture.Click += new System.EventHandler(this.karta_Click);
             // 
             // karta6
             // 
-            this.karta6.Image = global::Historyczne_Bitwy.Properties.Resources.wojak;
-            this.karta6.Location = new System.Drawing.Point(534, 588);
-            this.karta6.Name = "karta6";
-            this.karta6.Size = new System.Drawing.Size(100, 140);
-            this.karta6.TabIndex = 13;
-            this.karta6.TabStop = false;
-            this.karta6.Click += new System.EventHandler(this.karta_Click);
+            this.karta6.Picture.Image = global::Historyczne_Bitwy.Properties.Resources.wojak;
+            this.karta6.Picture.Location = new System.Drawing.Point(534, 588);
+            this.karta6.Picture.Name = "karta6";
+            this.karta6.Picture.Size = new System.Drawing.Size(100, 140);
+            this.karta6.Picture.TabIndex = 13;
+            this.karta6.Picture.TabStop = false;
+            this.karta6.Picture.Click += new System.EventHandler(this.karta_Click);
             // 
             // karta5
             // 
-            this.karta5.Image = global::Historyczne_Bitwy.Properties.Resources.wojak;
-            this.karta5.Location = new System.Drawing.Point(428, 588);
-            this.karta5.Name = "karta5";
-            this.karta5.Size = new System.Drawing.Size(100, 140);
-            this.karta5.TabIndex = 12;
-            this.karta5.TabStop = false;
-            this.karta5.Click += new System.EventHandler(this.karta_Click);
+            this.karta5.Picture.Image = global::Historyczne_Bitwy.Properties.Resources.wojak;
+            this.karta5.Picture.Location = new System.Drawing.Point(428, 588);
+            this.karta5.Picture.Name = "karta5";
+            this.karta5.Picture.Size = new System.Drawing.Size(100, 140);
+            this.karta5.Picture.TabIndex = 12;
+            this.karta5.Picture.TabStop = false;
+            this.karta5.Picture.Click += new System.EventHandler(this.karta_Click);
             // 
             // karta4
             // 
-            this.karta4.Image = global::Historyczne_Bitwy.Properties.Resources.zolnierz;
-            this.karta4.Location = new System.Drawing.Point(322, 588);
-            this.karta4.Name = "karta4";
-            this.karta4.Size = new System.Drawing.Size(100, 140);
-            this.karta4.TabIndex = 11;
-            this.karta4.TabStop = false;
-            this.karta4.Click += new System.EventHandler(this.karta_Click);
+            this.karta4.Picture.Image = global::Historyczne_Bitwy.Properties.Resources.zolnierz;
+            this.karta4.Picture.Location = new System.Drawing.Point(322, 588);
+            this.karta4.Picture.Name = "karta4";
+            this.karta4.Picture.Size = new System.Drawing.Size(100, 140);
+            this.karta4.Picture.TabIndex = 11;
+            this.karta4.Picture.TabStop = false;
+            this.karta4.Picture.Click += new System.EventHandler(this.karta_Click);
             // 
             // karta3
             // 
-            this.karta3.Image = global::Historyczne_Bitwy.Properties.Resources.zolnierz;
-            this.karta3.Location = new System.Drawing.Point(216, 588);
-            this.karta3.Name = "karta3";
-            this.karta3.Size = new System.Drawing.Size(100, 140);
-            this.karta3.TabIndex = 10;
-            this.karta3.TabStop = false;
-            this.karta3.Click += new System.EventHandler(this.karta_Click);
+            this.karta3.Picture.Image = global::Historyczne_Bitwy.Properties.Resources.zolnierz;
+            this.karta3.Picture.Location = new System.Drawing.Point(216, 588);
+            this.karta3.Picture.Name = "karta3";
+            this.karta3.Picture.Size = new System.Drawing.Size(100, 140);
+            this.karta3.Picture.TabIndex = 10;
+            this.karta3.Picture.TabStop = false;
+            this.karta3.Picture.Click += new System.EventHandler(this.karta_Click);
             // 
             // karta2
             // 
-            this.karta2.Image = global::Historyczne_Bitwy.Properties.Resources.dobrawa;
-            this.karta2.Location = new System.Drawing.Point(110, 588);
-            this.karta2.Name = "karta2";
-            this.karta2.Size = new System.Drawing.Size(100, 140);
-            this.karta2.TabIndex = 9;
-            this.karta2.TabStop = false;
-            this.karta2.Click += new System.EventHandler(this.karta_Click);
+            this.karta2.Picture.Image = global::Historyczne_Bitwy.Properties.Resources.dobrawa;
+            this.karta2.Picture.Location = new System.Drawing.Point(110, 588);
+            this.karta2.Picture.Name = "karta2";
+            this.karta2.Picture.Size = new System.Drawing.Size(100, 140);
+            this.karta2.Picture.TabIndex = 9;
+            this.karta2.Picture.TabStop = false;
+            this.karta2.Picture.Click += new System.EventHandler(this.karta_Click);
             // 
             // karta1
             // 
-            this.karta1.Image = global::Historyczne_Bitwy.Properties.Resources.mieszko;
-            this.karta1.Location = new System.Drawing.Point(4, 588);
-            this.karta1.Name = "karta1";
-            this.karta1.Size = new System.Drawing.Size(100, 140);
-            this.karta1.TabIndex = 8;
-            this.karta1.TabStop = false;
-            this.karta1.Click += new System.EventHandler(this.karta_Click);
+            this.karta1.Picture.Image = global::Historyczne_Bitwy.Properties.Resources.mieszko;
+            this.karta1.Picture.Location = new System.Drawing.Point(4, 588);
+            this.karta1.Picture.Name = "karta1";
+            this.karta1.Picture.Size = new System.Drawing.Size(100, 140);
+            this.karta1.Picture.TabIndex = 8;
+            this.karta1.Picture.TabStop = false;
+            this.karta1.Picture.Click += new System.EventHandler(this.karta_Click);
             // 
             // kartap
             // 
-            this.kartap.Image = global::Historyczne_Bitwy.Properties.Resources.pole;
-            this.kartap.Location = new System.Drawing.Point(322, 164);
-            this.kartap.Name = "kartap";
-            this.kartap.Size = new System.Drawing.Size(100, 140);
-            this.kartap.TabIndex = 7;
-            this.kartap.TabStop = false;
+            this.kartap.Picture.Image = global::Historyczne_Bitwy.Properties.Resources.pole;
+            this.kartap.Picture.Location = new System.Drawing.Point(322, 164);
+            this.kartap.Picture.Name = "kartap";
+            this.kartap.Picture.Size = new System.Drawing.Size(100, 140);
+            this.kartap.Picture.TabIndex = 7;
+            this.kartap.Picture.TabStop = false;
             // 
             // pictureBox7
             // 
@@ -548,15 +548,15 @@ namespace Historyczne_Bitwy
             ((System.ComponentModel.ISupportInitialize)(this.Informacje)).EndInit();
             this.MiniMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Nazwa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kartag)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.karta1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kartap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kartag.Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta7.Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta6.Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta5.Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta4.Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta3.Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta2.Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.karta1.Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kartap.Picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Security.Cryptography;
-using System.Windows.Forms;
-
-namespace Historyczne_Bitwy.View
+﻿namespace Historyczne_Bitwy.View
 {
     public class Walka
     {
@@ -10,9 +6,9 @@ namespace Historyczne_Bitwy.View
         public GameCard FightLoser;
         public void Zmiana(GameCard nowy, GameCard stary)
         {
-            nowy.Image = stary.Image;
-            stary.Enabled = false;
-            stary.Image = Properties.Resources.substytut;
+            nowy.Picture.Image = stary.Picture.Image;
+            stary.Picture.Enabled = false;
+            stary.Picture.Image = Properties.Resources.substytut;
            
         } 
     }

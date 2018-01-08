@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Historyczne_Bitwy.View
 {
@@ -21,15 +13,16 @@ namespace Historyczne_Bitwy.View
             switch (poziom)
             {
                 case 1:
-                    picture1.Image = Properties.Resources.mieszko;
-                    picture2.Image = Properties.Resources.dobrawa;
-                    picture3.Image = Properties.Resources.zolnierz;
-                    picture4.Image = Properties.Resources.zolnierz;
-                    picture5.Image = Properties.Resources.zolnierz;
-                    picture6.Image = Properties.Resources.wojak;
-                    picture7.Image = Properties.Resources.wojak;
-                    picture8.Image = Properties.Resources.pole;
-                    picture9.Image = Properties.Resources.pole;
+                    
+                    picture1.Picture.Image = Properties.Resources.mieszko;
+                    picture2.Picture.Image = Properties.Resources.dobrawa;
+                    picture3.Picture.Image = Properties.Resources.zolnierz;
+                    picture4.Picture.Image = Properties.Resources.zolnierz;
+                    picture5.Picture.Image = Properties.Resources.zolnierz;
+                    picture6.Picture.Image = Properties.Resources.wojak;
+                    picture7.Picture.Image = Properties.Resources.wojak;
+                    picture8.Picture.Image = Properties.Resources.pole;
+                    picture9.Picture.Image = Properties.Resources.pole;
                     info.Image = Properties.Resources.info1;
                     nazwa.Image = Properties.Resources.nazwa1;
 
@@ -41,24 +34,24 @@ namespace Historyczne_Bitwy.View
                     picture6.CombatValue = 1; // a najgorsze jest to ze nie potrafie porozumiewac sie miedzy klasami, z klasy do maina wrzuce, ale nie w druga strone 
                     picture7.CombatValue = 1;
 
-                    picture1.Enabled = true;
-                    picture2.Enabled = true;
-                    picture3.Enabled = true;
-                    picture4.Enabled = true;
-                    picture5.Enabled = true;
-                    picture6.Enabled = true;
-                    picture7.Enabled = true;
+                    picture1.Picture.Enabled = true;
+                    picture2.Picture.Enabled = true;
+                    picture3.Picture.Enabled = true;
+                    picture4.Picture.Enabled = true;
+                    picture5.Picture.Enabled = true;
+                    picture6.Picture.Enabled = true;
+                    picture7.Picture.Enabled = true;
                     break;
                 case 2:
-                    picture1.Image = Properties.Resources.lokietek;
-                    picture2.Image = Properties.Resources.kazimierz;
-                    picture3.Image = Properties.Resources.rycerz;
-                    picture4.Image = Properties.Resources.zolnierz;
-                    picture5.Image = Properties.Resources.zolnierz;
-                    picture6.Image = Properties.Resources.wojak;
-                    picture7.Image = Properties.Resources.wojak;
-                    picture8.Image = Properties.Resources.pole;
-                    picture9.Image = Properties.Resources.pole;
+                    picture1.Picture.Image = Properties.Resources.lokietek;
+                    picture2.Picture.Image = Properties.Resources.kazimierz;
+                    picture3.Picture.Image = Properties.Resources.rycerz;
+                    picture4.Picture.Image = Properties.Resources.zolnierz;
+                    picture5.Picture.Image = Properties.Resources.zolnierz;
+                    picture6.Picture.Image = Properties.Resources.wojak;
+                    picture7.Picture.Image = Properties.Resources.wojak;
+                    picture8.Picture.Image = Properties.Resources.pole;
+                    picture9.Picture.Image = Properties.Resources.pole;
                     info.Image = Properties.Resources.info2;
                     nazwa.Image = Properties.Resources.nazwa2;
 
@@ -70,24 +63,24 @@ namespace Historyczne_Bitwy.View
                     picture6.CombatValue = 1;
                     picture7.CombatValue = 1;
 
-                    picture1.Enabled = true;
-                    picture2.Enabled = true;
-                    picture3.Enabled = true;
-                    picture4.Enabled = true;
-                    picture5.Enabled = true;
-                    picture6.Enabled = true;
-                    picture7.Enabled = true;
+                    picture1.Picture.Enabled = true;
+                    picture2.Picture.Enabled = true;
+                    picture3.Picture.Enabled = true;
+                    picture4.Picture.Enabled = true;
+                    picture5.Picture.Enabled = true;
+                    picture6.Picture.Enabled = true;
+                    picture7.Picture.Enabled = true;
                     break;
                 case 3:
-                    picture1.Image = Properties.Resources.jagiello;
-                    picture2.Image = Properties.Resources.witold;
-                    picture3.Image = Properties.Resources.rycerz;
-                    picture4.Image = Properties.Resources.rycerz;
-                    picture5.Image = Properties.Resources.zolnierz;
-                    picture6.Image = Properties.Resources.wojak;
-                    picture7.Image = Properties.Resources.wojak;
-                    picture8.Image = Properties.Resources.pole;
-                    picture9.Image = Properties.Resources.pole;
+                    picture1.Picture.Image = Properties.Resources.jagiello;
+                    picture2.Picture.Image = Properties.Resources.witold;
+                    picture3.Picture.Image = Properties.Resources.rycerz;
+                    picture4.Picture.Image = Properties.Resources.rycerz;
+                    picture5.Picture.Image = Properties.Resources.zolnierz;
+                    picture6.Picture.Image = Properties.Resources.wojak;
+                    picture7.Picture.Image = Properties.Resources.wojak;
+                    picture8.Picture.Image = Properties.Resources.pole;
+                    picture9.Picture.Image = Properties.Resources.pole;
                     info.Image = Properties.Resources.info3;
                     nazwa.Image = Properties.Resources.nazwa3;
 
@@ -99,24 +92,24 @@ namespace Historyczne_Bitwy.View
                     picture6.CombatValue = 1;
                     picture7.CombatValue = 1;
 
-                    picture1.Enabled = true;
-                    picture2.Enabled = true;
-                    picture3.Enabled = true;
-                    picture4.Enabled = true;
-                    picture5.Enabled = true;
-                    picture6.Enabled = true;
-                    picture7.Enabled = true;
+                    picture1.Picture.Enabled = true;
+                    picture2.Picture.Enabled = true;
+                    picture3.Picture.Enabled = true;
+                    picture4.Picture.Enabled = true;
+                    picture5.Picture.Enabled = true;
+                    picture6.Picture.Enabled = true;
+                    picture7.Picture.Enabled = true;
                     break;
                 case 4:
-                    picture1.Image = Properties.Resources.jagiellonczyk;
-                    picture2.Image = Properties.Resources.dunin;
-                    picture3.Image = Properties.Resources.husarz;
-                    picture4.Image = Properties.Resources.rycerz;
-                    picture5.Image = Properties.Resources.zolnierz;
-                    picture6.Image = Properties.Resources.wojak;
-                    picture7.Image = Properties.Resources.wojak;
-                    picture8.Image = Properties.Resources.pole;
-                    picture9.Image = Properties.Resources.pole;
+                    picture1.Picture.Image = Properties.Resources.jagiellonczyk;
+                    picture2.Picture.Image = Properties.Resources.dunin;
+                    picture3.Picture.Image = Properties.Resources.husarz;
+                    picture4.Picture.Image = Properties.Resources.rycerz;
+                    picture5.Picture.Image = Properties.Resources.zolnierz;
+                    picture6.Picture.Image = Properties.Resources.wojak;
+                    picture7.Picture.Image = Properties.Resources.wojak;
+                    picture8.Picture.Image = Properties.Resources.pole;
+                    picture9.Picture.Image = Properties.Resources.pole;
                     info.Image = Properties.Resources.info4;
                     nazwa.Image = Properties.Resources.nazwa4;
 
@@ -128,24 +121,24 @@ namespace Historyczne_Bitwy.View
                     picture6.CombatValue = 1;
                     picture7.CombatValue = 1;
 
-                    picture1.Enabled = true;
-                    picture2.Enabled = true;
-                    picture3.Enabled = true;
-                    picture4.Enabled = true;
-                    picture5.Enabled = true;
-                    picture6.Enabled = true;
-                    picture7.Enabled = true;
+                    picture1.Picture.Enabled = true;
+                    picture2.Picture.Enabled = true;
+                    picture3.Picture.Enabled = true;
+                    picture4.Picture.Enabled = true;
+                    picture5.Picture.Enabled = true;
+                    picture6.Picture.Enabled = true;
+                    picture7.Picture.Enabled = true;
                     break;
                 case 5:
-                    picture1.Image = Properties.Resources.zygmunt;
-                    picture2.Image = Properties.Resources.ostrogski;
-                    picture3.Image = Properties.Resources.husarz;
-                    picture4.Image = Properties.Resources.husarz;
-                    picture5.Image = Properties.Resources.rycerz;
-                    picture6.Image = Properties.Resources.zolnierz;
-                    picture7.Image = Properties.Resources.wojak;
-                    picture8.Image = Properties.Resources.pole;
-                    picture9.Image = Properties.Resources.pole;
+                    picture1.Picture.Image = Properties.Resources.zygmunt;
+                    picture2.Picture.Image = Properties.Resources.ostrogski;
+                    picture3.Picture.Image = Properties.Resources.husarz;
+                    picture4.Picture.Image = Properties.Resources.husarz;
+                    picture5.Picture.Image = Properties.Resources.rycerz;
+                    picture6.Picture.Image = Properties.Resources.zolnierz;
+                    picture7.Picture.Image = Properties.Resources.wojak;
+                    picture8.Picture.Image = Properties.Resources.pole;
+                    picture9.Picture.Image = Properties.Resources.pole;
                     info.Image = Properties.Resources.info5;
                     nazwa.Image = Properties.Resources.nazwa5;
                     button.Image = Properties.Resources.button_koniecgry;
@@ -158,13 +151,13 @@ namespace Historyczne_Bitwy.View
                     picture6.CombatValue = 2;
                     picture7.CombatValue = 1;
 
-                    picture1.Enabled = true;
-                    picture2.Enabled = true;
-                    picture3.Enabled = true;
-                    picture4.Enabled = true;
-                    picture5.Enabled = true;
-                    picture6.Enabled = true;
-                    picture7.Enabled = true;
+                    picture1.Picture.Enabled = true;
+                    picture2.Picture.Enabled = true;
+                    picture3.Picture.Enabled = true;
+                    picture4.Picture.Enabled = true;
+                    picture5.Picture.Enabled = true;
+                    picture6.Picture.Enabled = true;
+                    picture7.Picture.Enabled = true;
                     break;
                 
                 default:

@@ -111,6 +111,21 @@ namespace Historyczne_Bitwy
             Informacje.Hide();
             NextLvl.Hide();
             TryAgain.Hide(); // czekaj nie tu
+            LvlChange lvlChange = new LvlChange();
+            lvlChange.Change(
+                karta1,
+                karta2,
+                karta3,
+                karta4,
+                karta5,
+                karta6,
+                karta7,
+                kartag,
+                kartap,
+                _currentLevel,
+                Informacje,
+                Nazwa,
+                NextLvl);
         }
 
         private void bpoziom_Click(object sender, EventArgs e)
@@ -231,7 +246,8 @@ namespace Historyczne_Bitwy
 
         private void karta_Click(object sender, EventArgs e)
         {
-            var card = sender as GameCard;
+            var card = (sender as CardGraphics)?.Owner;
+
 
             var walka = new Walka();
             var levelChange = new LvlChange(); // dobra, zjebalem ogolnie nie wiedzac jak to zrobic
@@ -301,14 +317,12 @@ namespace Historyczne_Bitwy
                 {Enemy.eryk2, 6},
                 {Enemy.iwan, 6}
             }; 
-            var toReturn = new GameCard
-            {
-                Image = enemyPictures[enemy],
-                CombatValue = enemyValues[enemy],
-                Location = new Point(322, 428),
-                Size = new Size(100, 140),
-                Name = enemy.ToString()
-            };
+            var toReturn= new GameCard();
+            toReturn.Picture.Image = enemyPictures[enemy];
+            toReturn.CombatValue = enemyValues[enemy];
+            toReturn.Picture.Location = new Point(322, 428);
+            toReturn.Picture.Size = new Size(100, 140);
+            toReturn.Picture.Name = enemy.ToString();
 
 
             return toReturn;
@@ -321,7 +335,7 @@ namespace Historyczne_Bitwy
             var picked = generator.Next() % rand;
             var createdEnemy = CreateEnemy(Levels[_currentLevel][picked]); // jakis switch potrzebny? poco czy w liscie to idzie numerycznie? tzn pierwsza pozycja to 1, druwa 2 itp? bo teoretycznie powinno juz dzialac
             kartap.CombatValue = createdEnemy.CombatValue;
-            kartap.Image = createdEnemy.Image;
+            kartap.Picture.Image = createdEnemy.Picture.Image;
             
         } // najs :D a teraz wystarczy ze sie odwolam czekaj gdzie ro bylo 
 
