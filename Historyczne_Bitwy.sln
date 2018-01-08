@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Historyczne_Bitwy", "Historyczne_Bitwy\Historyczne_Bitwy.csproj", "{ADA7F179-8D5E-4E9E-A268-3BF4C8A66526}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADA7F179-8D5E-4E9E-A268-3BF4C8A66526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA7F179-8D5E-4E9E-A268-3BF4C8A66526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA7F179-8D5E-4E9E-A268-3BF4C8A66526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA7F179-8D5E-4E9E-A268-3BF4C8A66526}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {998BB330-ECC2-4187-BD54-B550E9C1B107}
+	EndGlobalSection
+EndGlobal
