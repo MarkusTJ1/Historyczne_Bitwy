@@ -10,7 +10,7 @@ namespace Historyczne_Bitwy
     public partial class Main : Form
     {
         int counter;
-        int _currentLevel = 1;
+        int _currentLevel = 0;
 
         public Main()
         {
@@ -103,7 +103,7 @@ namespace Historyczne_Bitwy
 
         private void bstart_Click(object sender, EventArgs e)
         {
-            _currentLevel = 1;
+            _currentLevel=0;
             Menu.Hide();
             Poziomy.Hide();
             Pomoc.Hide();
@@ -247,21 +247,9 @@ namespace Historyczne_Bitwy
         private void karta_Click(object sender, EventArgs e)
         {
             var card = (sender as CardGraphics)?.Owner;
-
-
+            
             var walka = new Walka();
-            var levelChange = new LvlChange(); // dobra, zjebalem ogolnie nie wiedzac jak to zrobic
-            // bo tam gdzie mam buttony to rzeczywiscie karty zbieraja z picture z klasy LvlChange
-            // ale tutaj tego nie mam, znaczy wiem ze to nie ma prawa dzialac, ale nie wiem jak to mozna zrobic zeby dzialalo 
-            PrepareEnemyCardToFight(kartap); // to ja dodalem, ale nie dzialalo, wiec do wyebania jednak
-                                             // nie, jednak nie wiem jak to zrobic 
-                                             // co zrobic konkretnie opisz
-                                             // zeby karta w mainie to bylo to samo co picture w lvlchange, bo wtedy by sie parametry zgadzaly
-                                             // chyba ze na razie na sztywno w designerze ustawic te, na razie na sztywno, a przy kazdej zmianie levela beda sie, chodzi mi o pozycje startowa nazwijmy to
-                                             //no to i tak wychodzi na to samo przeciez
-            //i nie rozwiazuje problemu
-            // Ludi pyta "jak tam Robert sprawko"
-            // bo mnie tu obserwuje dwie strony na ile? tez masz czas do polnocy?
+            PrepareEnemyCardToFight(kartap); 
             walka.Zmiana(kartag, card); 
             counter++;
             var graczScore= 0;
@@ -330,12 +318,13 @@ namespace Historyczne_Bitwy
 
         private void PrepareEnemyCardToFight(GameCard karta)
         {
+
             var rand = 7;
             var generator = new Random();
             var picked = generator.Next() % rand;
-            var createdEnemy = CreateEnemy(Levels[_currentLevel][picked]); // jakis switch potrzebny? poco czy w liscie to idzie numerycznie? tzn pierwsza pozycja to 1, druwa 2 itp? bo teoretycznie powinno juz dzialac
-            kartap.CombatValue = createdEnemy.CombatValue;
-            kartap.Picture.Image = createdEnemy.Picture.Image;
+            var createdEnemy = CreateEnemy(Levels[_currentLevel][picked]); 
+            karta.CombatValue = createdEnemy.CombatValue;
+            karta.Picture.Image = createdEnemy.Picture.Image;
             
         } // najs :D a teraz wystarczy ze sie odwolam czekaj gdzie ro bylo 
 

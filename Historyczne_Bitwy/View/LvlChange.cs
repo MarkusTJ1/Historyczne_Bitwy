@@ -1,10 +1,44 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Collections.Specialized;
+using System.Windows.Forms;
 
 namespace Historyczne_Bitwy.View
 {
     public class LvlChange
     {
+        public enum Allies {
+            Mieszko,
+            Dobrawa,
+            Zolnierz,
+            Wojak,
+            Rycerz,
+            Husarz,
+            Lokietek,
+            Jagiellonczyk,
+            Zygmunt,
+            Kazimierz,
+            Ostrogski,
+            Dunin,
+            Jagiello,
+            Witold
+        }
 
+        public class Ally : IComparable<Ally> { 
+
+            public static readonly Ally Mieszko = new Ally("Mieszko",new GameCard{CombatValue = 4});
+            public GameCard Card;
+            public string Name;
+            public Ally(string name, GameCard card) {
+                Name = name;
+                Card = card;
+            }
+
+            public int CompareTo(Ally other) {
+                if (ReferenceEquals(this, other)) return 0;
+                if (ReferenceEquals(null, other)) return 1;
+                return string.Compare(Name, other.Name, StringComparison.Ordinal);
+            }
+        }
         
 
         public void Change(GameCard picture1, GameCard picture2, GameCard picture3, GameCard picture4,
@@ -12,7 +46,7 @@ namespace Historyczne_Bitwy.View
         {
             switch (poziom)
             {
-                case 1:
+                case 0:
                     
                     picture1.Picture.Image = Properties.Resources.mieszko;
                     picture2.Picture.Image = Properties.Resources.dobrawa;
