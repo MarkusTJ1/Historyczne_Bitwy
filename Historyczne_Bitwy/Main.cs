@@ -11,6 +11,8 @@ namespace Historyczne_Bitwy
     {
         int counter;
         int _currentLevel = 0;
+        int graczScore = 0;
+        int rand = 7;
 
         public Main()
         {
@@ -24,59 +26,60 @@ namespace Historyczne_Bitwy
 
         private void PrepareLevels()
         {
-            Levels = new List<IList<Enemy>>
-            {
-                new List<Enemy>
-                {
-                    Enemy.ritter1,
-                    Enemy.ritter1,
-                    Enemy.ritter2,
-                    Enemy.ritter2,
-                    Enemy.ritter2,
-                    Enemy.ritter1,
-                    Enemy.hodo
-                },
-                new List<Enemy>
-                {
-                    Enemy.ritter1,
-                    Enemy.ritter1,
-                    Enemy.ritter2,
-                    Enemy.ritter2,
-                    Enemy.ritter3,
-                    Enemy.ritter3,
-                    Enemy.altenburg
-                },
-                new List<Enemy>
-                {
-                    Enemy.ritter1,
-                    Enemy.ritter1,
-                    Enemy.ritter2,
-                    Enemy.ritter3,
-                    Enemy.ritter3,
-                    Enemy.ritter3,
-                    Enemy.ulrich
-                },
-                new List<Enemy>
-                {
-                    Enemy.ritter1,
-                    Enemy.ritter1,
-                    Enemy.ritter2,
-                    Enemy.ritter3,
-                    Enemy.ritter4,
-                    Enemy.ritter4,
-                    Enemy.eryk2
-                },
-                new List<Enemy>
-                {
-                    Enemy.ritter1,
-                    Enemy.ritter2,
-                    Enemy.ritter3,
-                    Enemy.ritter4,
-                    Enemy.ritter4,
-                    Enemy.ritter4,
-                    Enemy.iwan
-                }
-            };
+
+             Levels = new List<IList<Enemy>>
+             {
+                 new List<Enemy>
+                 {
+                     Enemy.ritter1,
+                     Enemy.ritter1,
+                     Enemy.ritter2,
+                     Enemy.ritter2,
+                     Enemy.ritter2,
+                     Enemy.ritter1,
+                     Enemy.hodo
+                 },
+                 new List<Enemy>
+                 {
+                     Enemy.ritter1,
+                     Enemy.ritter1,
+                     Enemy.ritter2,
+                     Enemy.ritter2,
+                     Enemy.ritter3,
+                     Enemy.ritter3,
+                     Enemy.altenburg
+                 },
+                 new List<Enemy>
+                 {
+                     Enemy.ritter1,
+                     Enemy.ritter1,
+                     Enemy.ritter2,
+                     Enemy.ritter3,
+                     Enemy.ritter3,
+                     Enemy.ritter3,
+                     Enemy.ulrich
+                 },
+                 new List<Enemy>
+                 {
+                     Enemy.ritter1,
+                     Enemy.ritter1,
+                     Enemy.ritter2,
+                     Enemy.ritter3,
+                     Enemy.ritter4,
+                     Enemy.ritter4,
+                     Enemy.eryk2
+                 },
+                 new List<Enemy>
+                 {
+                     Enemy.ritter1,
+                     Enemy.ritter2,
+                     Enemy.ritter3,
+                     Enemy.ritter4,
+                     Enemy.ritter4,
+                     Enemy.ritter4,
+                     Enemy.iwan
+                 }
+             };
         }
 
 
@@ -110,22 +113,10 @@ namespace Historyczne_Bitwy
             Gra.Show();
             Informacje.Hide();
             NextLvl.Hide();
-            TryAgain.Hide(); // czekaj nie tu
+            TryAgain.Hide();
+            PrepareLevels();
             LvlChange lvlChange = new LvlChange();
-            lvlChange.Change(
-                karta1,
-                karta2,
-                karta3,
-                karta4,
-                karta5,
-                karta6,
-                karta7,
-                kartag,
-                kartap,
-                _currentLevel,
-                Informacje,
-                Nazwa,
-                NextLvl);
+            lvlChange.Change(karta1, karta2, karta3, karta4, karta5, karta6, karta7, kartag, kartap, _currentLevel, Informacje, Nazwa, NextLvl);
         }
 
         private void bpoziom_Click(object sender, EventArgs e)
@@ -160,7 +151,8 @@ namespace Historyczne_Bitwy
             Menu.Hide();
             Poziomy.Hide();
             Pomoc.Hide();
-            _currentLevel = 1;
+            _currentLevel = 0;
+            PrepareLevels();
             levelChange.Change(karta1, karta2, karta3, karta4, karta5, karta6, karta7, kartag, kartap, _currentLevel,
                 Informacje, Nazwa, NextLvl);
             Gra.Show();
@@ -168,7 +160,9 @@ namespace Historyczne_Bitwy
             NextLvl.Hide();
             TryAgain.Hide();
             counter = 0;
-        } // Robert czy masz na mysli zeby po prostu toReturn zmienic na kartap? zeby pobierala dane? 
+            graczScore = 0;
+            
+        } 
 
         private void bplowce_Click(object sender, EventArgs e)
         {
@@ -176,7 +170,8 @@ namespace Historyczne_Bitwy
             Menu.Hide();
             Poziomy.Hide();
             Pomoc.Hide();
-            _currentLevel = 2;
+            _currentLevel = 1;
+            PrepareLevels();
             levelChange.Change(karta1, karta2, karta3, karta4, karta5, karta6, karta7, kartag, kartap, _currentLevel,
                 Informacje, Nazwa, NextLvl);
             Gra.Show();
@@ -184,6 +179,8 @@ namespace Historyczne_Bitwy
             NextLvl.Hide();
             TryAgain.Hide();
             counter = 0;
+            graczScore = 0;
+            
         }
 
         private void bgrunwald_Click(object sender, EventArgs e)
@@ -192,7 +189,8 @@ namespace Historyczne_Bitwy
             Menu.Hide();
             Poziomy.Hide();
             Pomoc.Hide();
-            _currentLevel = 3;
+            _currentLevel = 2;
+            PrepareLevels();
             levelChange.Change(karta1, karta2, karta3, karta4, karta5, karta6, karta7, kartag, kartap, _currentLevel,
                 Informacje, Nazwa, NextLvl);
             Gra.Show();
@@ -200,6 +198,8 @@ namespace Historyczne_Bitwy
             NextLvl.Hide();
             TryAgain.Hide();
             counter = 0;
+            graczScore = 0;
+            
         }
 
         private void bswiecino_Click(object sender, EventArgs e)
@@ -208,14 +208,18 @@ namespace Historyczne_Bitwy
             Menu.Hide();
             Poziomy.Hide();
             Pomoc.Hide();
-            _currentLevel = 4;
+            _currentLevel = 3;
+            PrepareLevels();
             levelChange.Change(karta1, karta2, karta3, karta4, karta5, karta6, karta7, kartag, kartap, _currentLevel,
                 Informacje, Nazwa, NextLvl);
+            
             Gra.Show();
             Informacje.Hide();
             NextLvl.Hide();
             TryAgain.Hide();
             counter = 0;
+            graczScore = 0;
+            
         }
 
         private void borsza_Click(object sender, EventArgs e)
@@ -224,7 +228,8 @@ namespace Historyczne_Bitwy
             Menu.Hide();
             Poziomy.Hide();
             Pomoc.Hide();
-            _currentLevel = 5;
+            _currentLevel = 4;
+            PrepareLevels();
             levelChange.Change(karta1, karta2, karta3, karta4, karta5, karta6, karta7, kartag, kartap, _currentLevel,
                 Informacje, Nazwa, NextLvl);
             Gra.Show();
@@ -232,6 +237,8 @@ namespace Historyczne_Bitwy
             NextLvl.Hide();
             TryAgain.Hide();
             counter = 0;
+            graczScore = 0;
+            
         }
 
 
@@ -247,24 +254,24 @@ namespace Historyczne_Bitwy
         private void karta_Click(object sender, EventArgs e)
         {
             var card = (sender as CardGraphics)?.Owner;
-            
+           
             var walka = new Walka();
             PrepareEnemyCardToFight(kartap); 
             walka.Zmiana(kartag, card); 
             counter++;
-            var graczScore= 0;
+            
       
             if (kartag.CombatValue >= kartap.CombatValue)
             {
                 graczScore++;
             }
 
-            if (graczScore >= 3 && counter == 7)//widzisz? hmm chyba nie nie tutuaj tylko czy w ogole. Pokaz w kodzie co myslisz ze powinno sie dziac
+            if (graczScore >= 5 && counter == 7)
             {
                 TryAgain.Hide();
                 NextLvl.Show();
             }
-            else if (graczScore < 3 && counter == 7)
+            else if (graczScore < 5 && counter == 7)
             {
                 NextLvl.Hide();
                 TryAgain.Show();
@@ -319,14 +326,24 @@ namespace Historyczne_Bitwy
         private void PrepareEnemyCardToFight(GameCard karta)
         {
 
-            var rand = 7;
+
             var generator = new Random();
             var picked = generator.Next() % rand;
-            var createdEnemy = CreateEnemy(Levels[_currentLevel][picked]); 
+            var createdEnemy = CreateEnemy(Levels[_currentLevel][picked]);
+            var memberEnemy = Levels[+_currentLevel][picked];
             karta.CombatValue = createdEnemy.CombatValue;
             karta.Picture.Image = createdEnemy.Picture.Image;
-            
-        } // najs :D a teraz wystarczy ze sie odwolam czekaj gdzie ro bylo 
+            Levels[_currentLevel].Remove(memberEnemy);
+            rand--;
+            if (rand == 0)
+            {
+                rand = 7;
+            }
+
+
+
+
+        } 
 
         private void MiniInfo_Click(object sender, EventArgs e)
         {
@@ -337,9 +354,11 @@ namespace Historyczne_Bitwy
         private void MiniReset_Click(object sender, EventArgs e)
         {
             var levelChange = new LvlChange();
+            PrepareLevels();
             levelChange.Change(karta1, karta2, karta3, karta4, karta5, karta6, karta7, kartag, kartap, _currentLevel,
                 Informacje, Nazwa, NextLvl);
             counter = 0;
+            graczScore = 0;
             TryAgain.Hide();
             Gra.Refresh();
         }
@@ -359,19 +378,23 @@ namespace Historyczne_Bitwy
         {
             var levelChange = new LvlChange();
 
-            if (_currentLevel < 5)
+            if (_currentLevel < 4)
             {
                 _currentLevel++;
                 levelChange.Change(karta1, karta2, karta3, karta4, karta5, karta6, karta7, kartag, kartap, _currentLevel,
                     Informacje, Nazwa, NextLvl);
-                counter = 0;
                 NextLvl.Hide();
+               
+                counter = 0;
+                graczScore = 0;
             }
-            else if (_currentLevel == 5)
+            else if (_currentLevel == 4)
             {
                 Gra.Hide();
                 Menu.Show();
                 counter = 0;
+                graczScore = 0;
+
             }
         }
 

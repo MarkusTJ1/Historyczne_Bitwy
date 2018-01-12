@@ -76,7 +76,7 @@ namespace Historyczne_Bitwy.View
                     picture6.Picture.Enabled = true;
                     picture7.Picture.Enabled = true;
                     break;
-                case 2:
+                case 1:
                     picture1.Picture.Image = Properties.Resources.lokietek;
                     picture2.Picture.Image = Properties.Resources.kazimierz;
                     picture3.Picture.Image = Properties.Resources.rycerz;
@@ -105,7 +105,7 @@ namespace Historyczne_Bitwy.View
                     picture6.Picture.Enabled = true;
                     picture7.Picture.Enabled = true;
                     break;
-                case 3:
+                case 2:
                     picture1.Picture.Image = Properties.Resources.jagiello;
                     picture2.Picture.Image = Properties.Resources.witold;
                     picture3.Picture.Image = Properties.Resources.rycerz;
@@ -134,7 +134,7 @@ namespace Historyczne_Bitwy.View
                     picture6.Picture.Enabled = true;
                     picture7.Picture.Enabled = true;
                     break;
-                case 4:
+                case 3:
                     picture1.Picture.Image = Properties.Resources.jagiellonczyk;
                     picture2.Picture.Image = Properties.Resources.dunin;
                     picture3.Picture.Image = Properties.Resources.husarz;
@@ -163,7 +163,7 @@ namespace Historyczne_Bitwy.View
                     picture6.Picture.Enabled = true;
                     picture7.Picture.Enabled = true;
                     break;
-                case 5:
+                case 4:
                     picture1.Picture.Image = Properties.Resources.zygmunt;
                     picture2.Picture.Image = Properties.Resources.ostrogski;
                     picture3.Picture.Image = Properties.Resources.husarz;
