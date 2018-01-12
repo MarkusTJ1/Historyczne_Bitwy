@@ -521,7 +521,7 @@ namespace Historyczne_Bitwy
             this.bstart.Size = new System.Drawing.Size(302, 76);
             this.bstart.TabIndex = 0;
             this.bstart.UseVisualStyleBackColor = true;
-            this.bstart.Click += new System.EventHandler(this.bstart_Click);
+            this.bstart.Click += new System.EventHandler(this.bcedynia_Click);
             // 
             // TryAgain
             // 
